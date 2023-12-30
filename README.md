@@ -1,4 +1,4 @@
-# Add Like Controls
+# Add Menu Actions
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/datlechin/flarum-add-like-controls.svg)](https://packagist.org/packages/datlechin/flarum-add-like-controls) [![Total Downloads](https://img.shields.io/packagist/dt/datlechin/flarum-add-like-controls.svg)](https://packagist.org/packages/datlechin/flarum-add-like-controls)
 
@@ -7,8 +7,6 @@ A [Flarum](http://flarum.org) extension.
 ### Features:
 - Add **Ignore/Unignore** option to Discussion Controls
 - Add **Mark Read/Unread** option to Discussion Controls
-
-![](https://raw.githubusercontent.com/datlechin/static/main/datlechin-flarum-add-like-controls.demo.png)
 
 ## Installation
 
