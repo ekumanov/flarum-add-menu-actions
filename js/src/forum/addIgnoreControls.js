@@ -5,7 +5,7 @@ import Button from 'flarum/common/components/Button';
 
 export default function addIgnoreControls() {
   extend(DiscussionControls, 'userControls', function (items, discussion, context) {
-    if (app.session.user) {
+    if (app.session.user && !(context instanceof DiscussionPage)) {
       let currentRoute = app.current.get('routeName');
 
       if (currentRoute === 'index' || currentRoute === 'following') {

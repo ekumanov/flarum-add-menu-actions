@@ -5,7 +5,7 @@ import Button from 'flarum/common/components/Button';
 
 export default function addMarkAsReadControls() {
   extend(DiscussionControls, 'userControls', function (items, discussion, context) {
-    if (app.session.user) {
+    if (app.session.user && !(context instanceof DiscussionPage)) {
       let currentRoute = app.current.get('routeName');
       if (currentRoute === 'index' || currentRoute === 'following') {
         if (discussion.isHidden()) return;
@@ -16,7 +16,7 @@ export default function addMarkAsReadControls() {
           'markAsRead',
           Button.component(
             {
-              icon: isRead ? 'fas fa-check-circle' : 'far fa-check-circle',
+              icon: isRead ? 'fas fa-envelope' : 'fas fa-envelope-open',
               onclick: () => {
                 if (isRead) {
                   discussion.save({ lastReadPostNumber: null, unread: true });
