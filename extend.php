@@ -19,7 +19,4 @@ return [
         ->js(__DIR__.'/js/dist/forum.js'),
 
     new Extend\Locales(__DIR__.'/locale'),
-
-    (new Extend\Event())
-        ->listen(Saving::class, Listeners\MarkUnread::class),
 ];

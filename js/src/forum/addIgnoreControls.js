@@ -8,7 +8,7 @@ export default function addIgnoreControls() {
     if (app.session.user && !(context instanceof DiscussionPage)) {
       let currentRoute = app.current.get('routeName');
 
-      if (currentRoute === 'index' || currentRoute === 'following') {
+      if (currentRoute === 'index' || currentRoute === 'following' || currentRoute === 'show') {
         if (discussion.isHidden()) return;
 
         const subscription = discussion.subscription();
