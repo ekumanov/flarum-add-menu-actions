@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of datlechin/flarum-add-like-controls.
+ * This file is part of ekumanov/flarum-add-menu-actions.
  *
  * Copyright (c) 2021 Ngo Quoc Dat.
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Datlechin\AddLikeControls;
+namespace Ekumanov\AddMenuActions;
 
 use Flarum\Discussion\Event\Saving;
 use Flarum\Extend;

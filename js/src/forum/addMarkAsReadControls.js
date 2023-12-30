@@ -5,7 +5,7 @@ import Button from 'flarum/common/components/Button';
 
 export default function addMarkAsReadControls() {
   extend(DiscussionControls, 'userControls', function (items, discussion, context) {
-    if (app.session.user && !(context instanceof DiscussionPage)) {
+    if (app.session.user) {
       let currentRoute = app.current.get('routeName');
       if (currentRoute === 'index' || currentRoute === 'following') {
         if (discussion.isHidden()) return;
@@ -26,7 +26,7 @@ export default function addMarkAsReadControls() {
               },
             },
             app.translator.trans(
-              isRead ? 'datlechin-flarum-add-like-controls.forum.mark_unread' : 'datlechin-flarum-add-like-controls.forum.mark_read'
+              isRead ? 'ekumanov-flarum-add-menu-actions.forum.mark_unread' : 'ekumanov-flarum-add-menu-actions.forum.mark_read'
             )
           )
         );

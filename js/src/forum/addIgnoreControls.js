@@ -5,7 +5,7 @@ import Button from 'flarum/common/components/Button';
 
 export default function addIgnoreControls() {
   extend(DiscussionControls, 'userControls', function (items, discussion, context) {
-    if (app.session.user && !(context instanceof DiscussionPage)) {
+    if (app.session.user) {
       let currentRoute = app.current.get('routeName');
 
       if (currentRoute === 'index' || currentRoute === 'following') {
@@ -27,7 +27,7 @@ export default function addIgnoreControls() {
             app.translator.trans(
               subscription === 'ignore'
                 ? 'flarum-subscriptions.forum.discussion_controls.unignore_button'
-                : 'datlechin-flarum-add-like-controls.forum.ignore'
+                : 'ekumanov-flarum-add-menu-actions.forum.ignore'
             )
           )
         );

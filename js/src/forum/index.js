@@ -1,10 +1,8 @@
 import app from 'flarum/forum/app';
 import addIgnoreControls from './addIgnoreControls';
-import addLikeControls from './addLikeControls';
 import addMarkAsReadControls from './addMarkAsReadControls';
 
-app.initializers.add('datlechin/flarum-add-like-controls', () => {
+app.initializers.add('ekumanov/flarum-add-menu-actions', () => {
   addMarkAsReadControls();
-  addLikeControls();
   addIgnoreControls();
 });

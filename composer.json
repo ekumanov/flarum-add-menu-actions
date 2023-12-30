@@ -1,6 +1,6 @@
 {
-    "name": "datlechin/flarum-add-like-controls",
-    "description": "Add Like and Ignore option to Discussion Controls",
+    "name": "ekumanov/flarum-add-menu-actions",
+    "description": "Add Ignore, Read/Unread and other actions to Discussion Controls",
     "keywords": [
         "flarum",
         "flarum-extension",
@@ -19,21 +19,21 @@
         }
     ],
     "support": {
-        "source": "https://github.com/datlechin/flarum-add-like-controls",
+        "source": "https://github.com/ekumanov/flarum-add-menu-actions",
         "forum": "https://discuss.flarum.org/d/29523"
     },
     "homepage": "https://ngoquocdat.com",
     "autoload": {
         "psr-4": {
-            "Datlechin\\AddLikeControls\\": "src/"
+            "Ekumanov\\AddMenuActions\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Add Like Controls",
+            "title": "Add Menu Actions",
             "category": "feature",
             "icon": {
-                "name": "fas fa-thumbs-up",
+                "name": "fas fa-ellipsis-v",
                 "backgroundColor": "#D3241C",
                 "color": "#fff"
             }

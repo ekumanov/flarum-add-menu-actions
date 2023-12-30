@@ -5,7 +5,6 @@
 A [Flarum](http://flarum.org) extension.
 
 ### Features:
-- Add **Like/Unlike** option to Discussion Controls
 - Add **Ignore/Unignore** option to Discussion Controls
 - Add **Mark Read/Unread** option to Discussion Controls
 
@@ -16,19 +15,19 @@ A [Flarum](http://flarum.org) extension.
 Install with composer:
 
 ```sh
-composer require datlechin/flarum-add-like-controls:"*"
+composer require ekumanov/flarum-add-menu-actions:"*"
 ```
 
 ## Updating
 
 ```sh
-composer update datlechin/flarum-add-like-controls:"*"
+composer update ekumanov/flarum-add-menu-actions:"*"
 php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
-- [Packagist](https://packagist.org/packages/datlechin/flarum-add-like-controls)
-- [GitHub](https://github.com/datlechin/flarum-add-like-controls)
+- [Packagist](https://packagist.org/packages/ekumanov/flarum-add-menu-actions)
+- [GitHub](https://github.com/ekumanov/flarum-add-menu-actions)
 - [Discuss](https://discuss.flarum.org/d/29523)

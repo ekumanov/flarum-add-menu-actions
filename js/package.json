@@ -1,5 +1,5 @@
 {
-    "name": "@datlechin/flarum-add-like-controls",
+    "name": "@ekumanov/flarum-add-menu-actions",
     "private": true,
     "prettier": "@flarum/prettier-config",
     "devDependencies": {
